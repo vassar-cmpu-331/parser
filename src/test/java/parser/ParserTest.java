@@ -16,13 +16,6 @@ public class ParserTest
 	}
 
 	@Test
-	public void testArray2() throws IOException, SyntaxError, CompilerError {
-		Parser parser = new Parser("src/test/resources/array2.pas");
-		parser.parse();
-		assertFalse(parser.error());
-	}
-
-	@Test
 	public void testArrayref() throws IOException, SyntaxError, CompilerError {
 		Parser parser = new Parser("src/test/resources/arrayref.pas");
 		parser.parse();
@@ -181,6 +174,13 @@ public class ParserTest
 		Parser parser = new Parser("src/test/resources/unaryminus.pas");
 		parser.parse();
 		assertFalse(parser.error());
+	}
+	
+	@Test
+	public void testNoSemicolon() throws IOException, SyntaxError, CompilerError {
+		Parser parser = new Parser("src/test/resources/nosemicolon.pas");
+		parser.parse();
+		assertTrue(parser.error());
 	}
 
 }
