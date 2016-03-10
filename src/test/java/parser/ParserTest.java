@@ -176,11 +176,4 @@ public class ParserTest
 		assertFalse(parser.error());
 	}
 	
-	@Test
-	public void testNoSemicolon() throws IOException, SyntaxError, CompilerError {
-		Parser parser = new Parser("src/test/resources/nosemicolon.pas");
-		parser.parse();
-		assertTrue(parser.error());
-	}
-
 }
