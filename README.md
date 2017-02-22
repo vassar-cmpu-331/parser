@@ -55,10 +55,7 @@ you can begin to test with your own lexical analyzer.
 The project already comes with all the configuration files needed for 
 [Travis-CI](https://education.travis-ci.com) to build your project whenever
 code is pushed to GitHub.  The only wrinkle is that Travis will not have access
-to your lexical analyzer. This is not a problem if you are using the model
-solution as it is available from a public Maven repository.  If you want
-to use your own lexical analyzer and Travis at the same time you will need
-to deploy your lexical analyzer to a public Maven repository that Travis
+to your lexical analyzer; you will have to deploy your lexical analyzer to a public Maven repository that Travis
 can access.
 
 Fortunately, GitHub makes it easy to host an ad-hoc public repository that
@@ -107,18 +104,4 @@ Travis can locate.
 updated version to your `mvn-repo` on GitHub or Travis will continue to
 use the old version.
 
-Once the setup is complete you should be able to connect to [https://education.travis-ci.com](https://education.travis-ci.com),
-sign in with your GitHub account and see the private repository for your
-assignment listed.  If not, please post a message to the Google Group.
-
-The final step is to tell Travis to build your project when code is pushed to GitHub:
- 
-1. Click the '+' next to `My Repositories`
-1. Select the `Vassar CMPU 331` organization.
-1. Click the slider so you have a green checkmark next to your repository.
-1. Push some code to GitHub.
-
-**Note** It has yet to be determined if students have permission to enable builds on
-Travis-CI themselves.  However, this isn't strictly necessary as we will enable
-Travis on all repositories once all students have cloned their private 
-repositories.
+Once the setup is complete send an email to the Google Group to have Travis enabled for your repository. After pushing code to your master branch you should be able to view the build status on the [Travis server](https://travis-ci.com/vassar-cmpu-331).
