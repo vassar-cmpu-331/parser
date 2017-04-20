@@ -22,7 +22,7 @@
     <dependencies>
         <dependency>
             <groupId>edu.vassar.cs.cmpu331</groupId>
-            <artifactId>lexical-analyzer-model</artifactId>
+            <artifactId>lexical-analyzer</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>

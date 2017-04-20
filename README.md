@@ -78,7 +78,7 @@ Travis can locate.
   ```
   $> cd [lexical-analyzer] 
   $> mvn clean package
-  $> mvn install:install-file -DpomFile=pom.xml -Dfile=target/lexical-analyzer-1.0.0.jar -DlocalRepository=[repo]  
+  $> mvn install:install-file -DpomFile=pom.xml -Dfile=target/lexical-analyzer-1.0.0.jar -DlocalRepositoryPath=[repo]  
   ```
 
   Where:
